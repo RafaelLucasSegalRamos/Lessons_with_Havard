@@ -32,7 +32,8 @@ Traduzindo seria a distancia até a chagada(Definida pelo Greedy Best First Sear
 se a heuristica nunca superestimar o verdadeiro custo, e se o custo do caminho nunca for negativo e se for consistente (ou monotônico)."""
 
 
-"""Existe tamebm o estilo MinMax que podemos utiliza-lo no jogo da velha. Onde o exemplo do professor foi:
+"""
+    Existe tambem o estilo MinMax que podemos utiliza-lo no jogo da velha. Onde o exemplo do professor foi:
     O jogador 'O' é o jogador que quer minimizar o resultado. Sendo que quando ele ganha o resutado retorna -1,.
     O jogador 'X' é o jogador que quer maximizar o resultado. Sendo que quando ele ganha o resutado retorna 1.
     E quando acontece um empate o resultado retorna 0.

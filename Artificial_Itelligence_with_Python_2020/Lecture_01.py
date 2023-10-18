@@ -69,4 +69,27 @@ Conectivos lógicos:
     Entailment é quando uma sentença é verdadeira em todos os modelos onde o knowledge base é verdadeiro. Ou seja, quando uma sentença é verdadeira em todos os modelos que satisfazem o knowledge base.
 
     a |= B, significa que B é consequência logica de a. Ou seja, B é verdadeiro em todos os modelos que satisfazem a. Ou seja se A for verdadeiro, então B tambem é verdadeiro. Sendo a = Alfa e B = Beta.
+
+    Inference e quando voce utiliza frase que ja existem para criar uma nova frase. Ou seja, quando voce utiliza o conhecimento que voce ja tem para criar um novo conhecimento.
+
+    Exemplo de Inference:
+
+    P = (É terça feira), Q = (Está chovendo) e R = (Harry vai fazer uma caminhada)
+
+    KB: (P ^ ¬Q) => R. Traduzindo para pessoas: Se for Terça-Feira(P) e(^) [não(¬) estiver chovendo(Q)](¬Q), então(=>) Harry vai fazer uma caminhada(R).
+
+    KB |= a. Traduzindo para pessoas: Se o knowledge base for verdadeiro, então Alfa tambem é verdadeiro.
+
+    Então para determinar KB |= a:
+        1. Encontrar todos os modelos que satisfazem KB.
+        2. Verificar se todos os modelos que satisfazem KB, tambem satisfazem a.
+        3. Se todos os modelos que satisfazem KB, tambem satisfazem a, então KB |= a.
+        4. Do contrario, KB não |= a.
+
+
+    Se P v Q e ¬P v R são verdadeiros, então Q v R é verdadeiro?
+    Eu posso transformar (a <=> B) em (a => B) ^ (B => a). Ou seja, eu posso transformar uma equivalencia em uma implicação.
+    E tambem posso eleminar implicações, transformando (a => B) em ¬a v B. Ou seja, eu posso transformar uma implicação em uma disjunção.
+    Posso aplicar a regra de De Morgan, transformando ¬(a ^ B) em ¬a v ¬B. Ou seja, eu posso transformar uma negação de uma conjunção em uma disjunção de negações.
 """
+
