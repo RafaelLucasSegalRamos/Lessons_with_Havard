@@ -1,0 +1,12 @@
+(A v B) ^ (¬A v C) ^ (¬C v ¬A) => B -> ^ (¬B)
+
+(¬A v C) (¬C v ¬A) -> ¬A = True; A = False
+
+(False ^ B) = True ; (¬B) = True
+
+B = True; ¬B = True
+
+()
+
+(A v B) ^ (¬A v C) ^ (¬C v ¬A) => B
+Ou seja essa sentença satisfaz B.

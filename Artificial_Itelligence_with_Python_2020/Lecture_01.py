@@ -91,5 +91,29 @@ Conectivos lógicos:
     Eu posso transformar (a <=> B) em (a => B) ^ (B => a). Ou seja, eu posso transformar uma equivalencia em uma implicação.
     E tambem posso eleminar implicações, transformando (a => B) em ¬a v B. Ou seja, eu posso transformar uma implicação em uma disjunção.
     Posso aplicar a regra de De Morgan, transformando ¬(a ^ B) em ¬a v ¬B. Ou seja, eu posso transformar uma negação de uma conjunção em uma disjunção de negações.
+
+    Aqui um exemplo da aplicação das regras de inferencia:
+    (P v Q) => R
+    ¬(P v Q) v R -> Tirando a implicação.
+    (¬P ^ ¬Q) v R -> Aplicando a regra de De Morgan, Ou seja distribuindo a negação.
+
+    Outro exemplo:
+    P v Q v R
+    ¬P v R v S -> Se ambas as sentenças forem verdadeiras, então que dizer que o Valor de P não interfere no resultado.
+    R v Q v S v R -> Então podemos simplesmente remover o P. Mas como R se repete, tambem podemos remove-lo.
+    R v Q v S -> E assim chegamos a conclusão que P v Q v R é equivalente a R v Q v S.
+
+    Checando KB |= a:
+        Checar se KB ^ ¬a é uma contradição, ou seja se ambos os valores se tornam verdadeiros ou se tornam falsos.
+            Se KB ^ ¬a for uma contradição, então KB |= a existe de fato.
+            Se KB ^ ¬a não for uma contradição, então KB |= a não existe.
+
+    Outro exemplo de inferencia por resolução:
+    (A v B) ^ (¬B v C) ^ (¬C) entail(=>) A
+    (A v B) ^ (¬B v C) ^ (¬C) ^ (¬A) -> Adicionando a negação de A.
+    (A v B)   (¬B v C)   (¬C)   (¬A) -> Separando cada clausula.
+    Se (¬B v C) e (¬C) são verdadeiros, então C é Falso e B tambem é. Ou seja podemos remover (¬B v C) e (¬C) e deixar apenas (¬B) Que funcionara da mesma forma.
+    E utilizando este (¬B) podemos rever o (A v B) e ver que se B for Falso, então A é verdadeiro. Ou seja podemos remover (A v B) e deixar apenas (A).
+    Então chegamos a este ponto: (A) ^ (¬B) ^ (¬C) ^ (¬A). Que é uma contradição, pois A e ¬A não podem ser verdadeiros ao mesmo tempo.
 """
 
