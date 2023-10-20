@@ -38,11 +38,11 @@ Conectivos lógicos:
 
     OBS: Ou seja quando P for False, então P => Q = True, independente do Q. E quando P for True, então P => Q = Q.
 
-        Exemplo de equivalência ou Bicondicional:
-            P = (Se estiver chovendo), Q = (eu vou estar dentro de casa). Frase original.
-            Se estiver chovendo, eu vou estar dentro de casa. -> P = True, Q = True, então P <=> Q = *True*
-            Se estiver chovendo, eu não vou  estar dentro de casa. -> P = True, Q = False, então P <=> Q = *False*.
-            Pois na bicondicional acontece somente se ambas as condiçoes forem preenchidas ou se ambas falaharam.
+    Exemplo de equivalência ou Bicondicional:
+        P = (Se estiver chovendo), Q = (eu vou estar dentro de casa). Frase original.
+        Se estiver chovendo, eu vou estar dentro de casa. -> P = True, Q = True, então P <=> Q = *True*
+        Se estiver chovendo, eu não vou  estar dentro de casa. -> P = True, Q = False, então P <=> Q = *False*.
+        Pois na bicondicional acontece somente se ambas as condiçoes forem preenchidas ou se ambas falaharam.
 
             Se não estiver chovendo, eu vou estar dentro de casa. -> P = False, Q = True, então P <=> Q = *False*.
             Se não estiver chovendo, eu não vou estar dentro de casa. -> P = False, Q = False, então P <=> Q = *True*.

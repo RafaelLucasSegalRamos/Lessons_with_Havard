@@ -81,4 +81,25 @@ Probabilidade Condicional
 
         Negation de probabilidade:
         P(¬ A) = 1 - P(A)
-    """
+
+        Marginalização:
+        P(A) = P(A, B) + P(A, ¬B)
+        Marginalização é o processo de descobrir se o Evento A depende do Evento B ou não. Pois soma dois estados onde o B é True, e no outro B é False.
+        Outro jeito de escreve-lo é:
+        P(X = xi) = Ej P(X = xi, Y = yj)
+
+        Conditioning:
+        P(A) = P(A|B)P(B) + P(A|¬B)P(¬B)
+        Conditioning é parecido com Marginalização, mas no caso ele soma dois estados onde o B é True, e no outro B é False, mas no caso ele multiplica pela probabilidade de B ser True ou False.
+        Outro jeito de escreve-lo é:
+        P(X = xi) = Ej P(X = xi, Y = yj) / P(Y = yj)
+
+        Agora alguns tipos de modelos:
+
+        Bayesian Network:
+        é um tipo de estrutura de dados que representa um conjunto de variaveis aleátorias e suas dependencias condicionais.
+        Ele é feito como grafico direcionado.
+        Cada nó representa uma variavel aleátoria, e cada aresta representa uma dependencia condicional.
+        A direção de X para Y significa que X é uma evidencia para Y.
+        E cada nó X tem uma distribuição de probabilidade condicional P(X|Parents(X)).
+"""
